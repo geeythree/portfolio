@@ -1,0 +1,87 @@
+$primary : #6F4A8E
+$secondary : #EBEBEB
+
+.container
+    min-height: 100vh
+    display: flex
+    background-color: #151515
+
+.base-circle
+    background-color: $primary
+    border-radius: 50%
+    height: 6rem
+    width: 6rem
+    transition: 850ms
+
+.overlap-circle
+    position: absolute
+    background-color: $primary
+    border-radius: 50%
+    height: 5rem
+    width: 5rem
+    margin-left: 50px
+    margin-top: 5px
+    transition: 850ms
+
+
+.fretboard
+    position: absolute
+    background-color: $primary
+    height: 1rem
+    width: 7rem
+    margin-left: 110px
+    margin-top: 35px
+    transition: 850ms
+
+
+.head
+    position: absolute
+    background-color: $primary
+    border-radius: 20%
+    width: 2rem
+    height: 25px
+    margin-left: 220px
+    margin-top: 30px
+    transition: 850ms
+
+
+.soundhole
+    position: absolute
+    background-color: #fff
+    border-radius: 50px
+    width: 30px
+    height: 30px
+    margin-left: 48px
+    margin-top: 30px
+    transition: 850ms
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5)
+
+
+.guitar-pos 
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: auto
+
+.base-circle
+    transform: rotate(-20deg)
+
+
+.base-circle:hover .soundhole
+    background-color: white
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5)
+
+.base-circle:hover
+    background-color: $secondary
+
+.base-circle:hover > div 
+    background-color: $secondary
+
+.base-circle:hover .container
+    background-color: white    
+
+
+
+
+   
