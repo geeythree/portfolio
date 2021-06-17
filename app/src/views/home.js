@@ -7,17 +7,17 @@ import '../styles/typewriter.css'
 
 function home() {
     return (
-        <div class="container">
+        <div className="container">
             <div>
-                <img src={world} class="world" alt="globe"/>
-                <h1 class="title">
+                <img src={world} className="world" alt="globe"/>
+                <h1 className="title">
                     Geeythree.
-                    <img src={console} class="console" alt="console" />
-                        <span class="console-text anim-typewriter">
+                    <img src={console} className="console" alt="console" />
+                        <span className="console-text anim-typewriter">
                             console.log('Hey there!')
                         </span>
                 </h1>
-                <img src={guitar} class="guitar" alt="guitar" />
+                <img src={guitar} className="guitar" alt="guitar" />
             </div>
         </div>
     )
