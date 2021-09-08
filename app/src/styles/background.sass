@@ -1,49 +1,56 @@
 .container
     min-height: 100vh
-    background-color: #050505
+    background: radial-gradient(ellipse at bottom, #1f1f1f 0%, #090A0F 100%)
     color: #EBEBEB
-    margin: 0
     display: flex
     align-items: center
     justify-content: center
-    overflow: hidden
+    flex-direction: column
 
 .title
-    font-size: 8rem
+    font-size: 132px
     display: flex
     flex-direction: column
+    justify-content: center
 
 .console
     width: 150px
-    position: relative
-    margin-left: 16rem
-    margin-top: -2rem
+    position: absolute
+    margin-left: 262px
+    margin-top: 209px
 
 .world
-    margin-top: 55px
-    margin-left: -5rem
+    margin-top: 64px
+    margin-left: -100px
     position: absolute
-    width: 150px
+    transform: rotate(30deg)
+    animation-name: spin
+    animation-duration: 10000ms
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
 
 .guitar
     position: absolute 
-    margin-top: -24rem
+    margin-top: -310px
     width: 320px
-    margin-left: 520px
+    margin-left: 540px
 
-@media (max-width: 768px)
+@media only screen and (max-width: 50em)
     .title
-        font-size: 4rem
+        font-size: 68px
     .console
         width: 120px
-        margin-left: 8rem
-        margin-top: -1rem
+        margin-left: 135px
+        margin-top: 143px
     .world
         display: none
-        width: 120px
-        margin-top: -5rem
-        margin-left: 6rem
     .guitar
-        width: 190px
-        margin-left: 0rem
-        margin-top: -17rem
+        width : 200px 
+        margin-left: 0px
+        margin-top: -200px

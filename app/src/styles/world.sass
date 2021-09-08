@@ -1,0 +1,44 @@
+$color: #00ADB5
+
+.circle
+    background: transparent
+    border: 2px solid $color
+    width: 150px
+    height: 150px
+    display: flex
+    border-radius: 50%
+
+.wave 
+  width: 300px
+  position: absolute
+  margin-top: 2px
+  margin-left: 10px
+
+.wave:before 
+    content: ''
+    width: 50%
+    position: absolute
+    height: 130px
+    display: block
+    border-top: 2px solid $color
+    border-radius: 50%
+    transform: rotate(240deg)
+    
+.second
+    margin-top: -12px
+    margin-left: 25px 
+    width: 280px
+
+.line
+    border: 1px solid $color
+    position: absolute
+    width: 95px
+    border-radius: 50%
+    transform: rotate(105deg)
+    margin-top: 65px
+    margin-left: -65px
+
+.copy
+    transform: rotate(90deg)
+    margin-left: 60px
+    margin-top: -60px

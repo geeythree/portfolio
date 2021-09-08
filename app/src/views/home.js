@@ -1,15 +1,23 @@
 import React from 'react'
 import '../styles/background.sass'
-import world from '../assets/world.png'
 import guitar from '../assets/guitar.png'
 import console from '../assets/console.png'
 import '../styles/typewriter.css'
+import { Navbar, Stars, World } from '../components'
+import '../styles/star.sass'
 
 function home() {
     return (
+        
+        <>
+        <Stars />
         <div className="container">
+        <Navbar />
             <div>
-                <img src={world} className="world" alt="globe"/>
+                <div className='world'>
+                    <World />
+                <div className="line1"></div>   
+                </div>
                 <h1 className="title">
                     Geeythree.
                     <img src={console} className="console" alt="console" />
@@ -20,6 +28,7 @@ function home() {
                 <img src={guitar} className="guitar" alt="guitar" />
             </div>
         </div>
+        </>
     )
 }
 

@@ -1,7 +1,7 @@
 .console-text{
     font-size: 13px;
-    margin-left: 264px;
-    margin-top: 185px;
+    margin-left: 269px;
+    margin-top: 230px;
     font-weight: lighter;
     position: absolute;
     width: fit-content;
@@ -9,6 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
+    color: #C8C2BC;
 }
 
 .anim-typewriter{
@@ -17,18 +18,18 @@
   }
   @keyframes typewriter{
     from{width: 0;}
-    to{width: 134px;}
+    to{width: 135px;} 
   }
   @keyframes blinkTextCursor{
-    from{border-right-color: rgba(78, 0, 167, 0.75);}
+    from{border-right-color: #00ADB5 ;}
     to{border-right-color: transparent;}
   }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 50em){
     .console-text{
-        margin-left: 135px;
+        margin-left: 143px;
         font-size: 10px;
-        margin-top: 110px;
+        margin-top: 160px;
     }
     @keyframes typewriter{
         from{width: 0;}

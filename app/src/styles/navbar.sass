@@ -1,0 +1,45 @@
+.nav
+    background-color: transparent   
+    color: #d6d6d6
+    position: absolute
+    top: 75px
+
+.link
+    text-decoration: None
+    font-size: 16px
+    font-weight: bold
+    padding-left: 25px
+    padding-right: 25px
+    padding-top: 10px
+    padding-bottom: 10px
+    cursor: pointer
+    color: #d6d6d6
+
+.link:hover
+    background-color: #126E82
+    box-shadow: inset 4px 2px 3px #075b6e
+    transition: 450ms ease-in-out
+    border-radius: 20px
+
+.menu
+    display: none
+
+@media only screen and ( max-width: 50em )
+    .nav
+        display: none
+
+    .menu
+        display: flex
+        top: 0
+        left: 0
+        position: absolute
+        padding: 30px
+
+    .mobile-view
+        display: flex
+        background: black
+        min-height: 100vh
+        
+        
+
+    
