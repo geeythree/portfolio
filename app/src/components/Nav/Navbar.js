@@ -24,7 +24,7 @@ function Navbar() {
                 <Link to='/contact' className="link">
                     Contact Me
                 </Link>
-                <Link to='../assets/satheesh_gayathri.pdf' target='_blank' className="link" download>
+                <Link to='https://github.com/geeythree/portfolio/blob/main/gayathri_satheesh.pdf' target='_blank' className="link" download>
                     CV
                 </Link>
             </div>
